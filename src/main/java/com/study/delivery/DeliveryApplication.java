@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Locale;
+
 @SpringBootApplication
 public class DeliveryApplication implements CommandLineRunner {
 
@@ -19,6 +21,7 @@ public class DeliveryApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        Locale.setDefault(Locale.US);
 
         // input 1
         System.out.println("Exemplo 1");
